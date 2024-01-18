@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+
+    .navcontainer{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+
+        span{
+            border: 2px solid white;
+            color: white;
+         }
+        
+        .nav{
+            padding: 20px;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 20px;
+                    padding-top: 20px;
+                    color: white;
+                    font-size: 12px;
+                    li{
+                        a{
+                            color: white;
+                        }
+                    }
+                }  
+        }
+
+        .collapse{
+            display: none;
+        }
+        @media screen and (max-width:600px) {
+            .collapse{
+                display: block;
+            }
+            .nav{
+                display: none;
+            }
+        }
+    }
+}
+
+
+#tasty{
+    background-image: url(/assets/img/bg_2\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    .tastybook{
+        text-align: center;
+
+        h1{
+            color: white;
+            font-size: 50px;
+            padding: 20px;
+        }
+
+        #btnbook{
+          border: 1px solid white;
+          padding: 10px 30px;
+          background: transparent;
+          color: white;
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#ourchef{
+
+    .chef{
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .tttt{
+        display: flex;
+        align-items: center;
+    }
+    .text{
+      padding: 20px;
+      width: 70%;
+
+      span{
+        opacity: 0.2;
+      }
+      h4{
+        padding-bottom: 20px;
+      }
+      p{
+        padding-top: 20px;
+        font-size: 13px;
+        color: gray;
+      }
+     
+    }
+}
+
+#ourSays{
+
+
+    .gren{
+        text-align: center;
+        width: 70%;
+    }
+    .says{
+        text-align: center;
+
+        h4{
+            padding-bottom: 20px;
+        }
+
+        span{
+            font-size: 12px;
+            opacity: 0.3;
+        }
+    }
+
+    .dennis{
+
+        img{
+            width: 40%;  
+            border-radius: 50%;
+            padding: 20px;
+        }
+        p{
+            padding: 20px;
+            font-size: 13px;
+            color: gray;
+        }
+        h5{
+            font-size: 15px;
+        }
+        span{
+            font-size: 13px;
+            color: gray;
+        }
+    }
+}
+
+#blog{
+    
+    .recent{
+        text-align: center;
+
+        span{
+            font-size: 12px;
+            color: gray;
+        }
+        h4{
+            padding-bottom: 20px;
+        }      
+    }
+
+    .cent{
+        width: 60%;
+    }
+    .even{
+        
+        img{
+            width: 100%;
+            padding-bottom: 20px;    
+        }
+    }
+    .blind{
+        padding-left: 20px;
+        span{
+            font-size: 12px;
+            color: gray;
+        }
+        p{
+            font-weight: 500;
+        }
+
+        h5{
+            font-size: 12px;
+            opacity: 0.5;
+        }
+    }
+}
+
+footer{
+ background-color: #27272B;
+
+ .asy{
+    width: 70%;
+ }
+ .tasty{
+   padding: 20px;
+    h5{
+        padding: 20px;
+        color: white;
+    }
+    p{
+        font-size: 13px;
+        color: gray;
+    }
+ }
+}

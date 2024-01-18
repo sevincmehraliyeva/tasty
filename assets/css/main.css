@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  background: transparent;
+}
+header .navcontainer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navcontainer span {
+  border: 2px solid white;
+  color: white;
+}
+header .navcontainer .nav {
+  padding: 20px;
+}
+header .navcontainer .nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  color: white;
+  font-size: 12px;
+}
+header .navcontainer .nav ul li a {
+  color: white;
+}
+header .navcontainer .collapse {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  header .navcontainer .collapse {
+    display: block;
+  }
+  header .navcontainer .nav {
+    display: none;
+  }
+}
+
+#tasty {
+  background-image: url(/assets/img/bg_2\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+#tasty .tastybook {
+  text-align: center;
+}
+#tasty .tastybook h1 {
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+}
+#tasty .tastybook #btnbook {
+  border: 1px solid white;
+  padding: 10px 30px;
+  background: transparent;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#ourchef .chef img {
+  width: 100%;
+}
+#ourchef .tttt {
+  display: flex;
+  align-items: center;
+}
+#ourchef .text {
+  padding: 20px;
+  width: 70%;
+}
+#ourchef .text span {
+  opacity: 0.2;
+}
+#ourchef .text h4 {
+  padding-bottom: 20px;
+}
+#ourchef .text p {
+  padding-top: 20px;
+  font-size: 13px;
+  color: gray;
+}
+
+#ourSays .gren {
+  text-align: center;
+  width: 70%;
+}
+#ourSays .says {
+  text-align: center;
+}
+#ourSays .says h4 {
+  padding-bottom: 20px;
+}
+#ourSays .says span {
+  font-size: 12px;
+  opacity: 0.3;
+}
+#ourSays .dennis img {
+  width: 40%;
+  border-radius: 50%;
+  padding: 20px;
+}
+#ourSays .dennis p {
+  padding: 20px;
+  font-size: 13px;
+  color: gray;
+}
+#ourSays .dennis h5 {
+  font-size: 15px;
+}
+#ourSays .dennis span {
+  font-size: 13px;
+  color: gray;
+}
+
+#blog .recent {
+  text-align: center;
+}
+#blog .recent span {
+  font-size: 12px;
+  color: gray;
+}
+#blog .recent h4 {
+  padding-bottom: 20px;
+}
+#blog .cent {
+  width: 60%;
+}
+#blog .even img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+#blog .blind {
+  padding-left: 20px;
+}
+#blog .blind span {
+  font-size: 12px;
+  color: gray;
+}
+#blog .blind p {
+  font-weight: 500;
+}
+#blog .blind h5 {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+footer {
+  background-color: #27272B;
+}
+footer .asy {
+  width: 70%;
+}
+footer .tasty {
+  padding: 20px;
+}
+footer .tasty h5 {
+  padding: 20px;
+  color: white;
+}
+footer .tasty p {
+  font-size: 13px;
+  color: gray;
+}
+
+#select #products .boxDiv img {
+  width: 100%;
+}
+
+#header {
+  position: static;
+  background-color: gray;
+}
